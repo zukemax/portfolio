@@ -4,7 +4,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '^/api':{
-        target: 'http://localhost:3000',
+        target: 'https://jovial-macaron-daff9d.netlify.app:3000',
         changeOrigin: true,
         logLevel: 'debug',
         pathRewrite: {'^/api':'/'}
