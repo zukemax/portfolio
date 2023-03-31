@@ -28,6 +28,6 @@ export default {
 <style scoped lang="scss">
   .home{
     display: flex;
-    gap: 20px;
+    // gap: 20px;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="portfolios">
-        <Portfolio v-for="portfolio in store.portfolios" :key="portfolio.id" :portfolio="portfolio"/>
+        <Portfolio :route="router" v-for="portfolio in store.portfolios" :key="portfolio.id" :portfolio="portfolio"/>
     </div>
 </template>
 
@@ -11,6 +11,9 @@ import { store } from '../store.js'
 export default ({
     components:{
         Portfolio,
+    },
+    props:{
+        router: String
     },
     data(){
         return{
@@ -25,9 +28,11 @@ export default ({
 
 <style scoped lang='scss'>
     .portfolios{
-        display: flex;
+        padding: 20px;
+        display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 10px;
+        // gap: 20px;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 </style>

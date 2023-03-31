@@ -1,5 +1,5 @@
 <template>
-    <button type="submit" :class="['btn']" >asdasd</button>
+    <button type="submit" :class="['btn']" >Add</button>
 </template>
 
 
@@ -12,12 +12,10 @@ export default{
 <style lang="scss" scoped>
     .btn{
         padding: 10px 20px;
-        border-radius: 0.5rem;
         color: #000;
         border: 0;
         font-weight: 500;
-        &.is-dark{
-            color: #fff;
-        }
+        color: #fff;
+        background: rgb(8, 91, 159);
     }
 </style>

@@ -8,12 +8,12 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/portfolio',
-    name: 'portfolio',
+    path: '/add-portfolio',
+    name: 'add-portfolio',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "add-portfolio" */ '../views/Portolio.vue')
+    component: () => import(/* webpackChunkName: "add-portfolio" */ '../views/AddPortfolioView.vue')
   }
 ]
 
